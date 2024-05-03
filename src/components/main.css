@@ -1,0 +1,372 @@
+@media screen and (min-width: 930px) {
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 4.65rem;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: center;
+        background-color: white;
+        width: 930px;
+        border-radius: 2rem;
+    
+    }
+    
+    .mains-form {
+        padding: 2.75rem 2rem 2.75rem 2.75rem;
+    }
+    
+    .mains-form>h1 {
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        font-size: 2.75rem;
+        margin-bottom: 1rem
+    }
+    
+    .mains-form>p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25rem
+    }
+    
+    .mains-image {
+        border-radius: 1rem;
+        padding: 1.5rem;
+        width: 400px;
+        height: 590px;
+        background-image: url('../SVG/illustration-sign-up-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -25px;
+        margin:1.3rem ;
+    }
+    
+    
+    ul {
+        padding-bottom: 22px;
+        transform: translate(-0.75rem);
+        padding-top: 10px;
+    }
+    
+    li {
+        list-style-image: url('../SVG/icon-list.svg');
+        font-size: 16px;
+        text-indent: 0.5rem;
+        text-align: start;
+        padding-bottom: 10px;
+    }
+    
+    .user-input {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+    
+    
+    .user-input>input {
+        font-size: 16px;
+        text-indent: 10px;
+        padding: 16px;
+        margin: 10px 0 20px 0;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        outline-width: 0.2px;
+        border-width: 0.2px;
+    }
+    
+    .input:invalid {
+        border-color: #FF527B;
+        color: #FF6A3A;
+        background-color: #ff6b3a3a;
+    }
+    
+    label:has(.input:invalid) {
+        color: #FF6A3A;
+    }
+    
+    label:has(.input:valid) {
+        color: transparent;
+    }
+    
+    .label {
+        color: #000000;
+    
+    }
+    
+    .label-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    button {
+        width: 100%;
+        border-radius: 0.4rem;
+        border-width: 0;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        background-color: hsl(234, 29%, 20%);
+        padding: 20px 0;
+        cursor: pointer;
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1)
+    }
+    
+    button:hover {
+        background-image: linear-gradient(to right,
+                #FF527B,
+                #FF6A3A);
+        box-shadow: 0px 15px 25px #FF527B77
+    }
+}
+
+/* {===============================================================================================================} */
+
+@media screen and (min-width: 650px) and (max-width:929px){
+    .main {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 4.65rem;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: center;
+        background-color: white;
+        width: 650px;
+        height: 550px;
+        border-radius: 2rem;
+        overflow: hidden;
+    
+    }
+    
+    .mains-form {
+        padding: 1.5rem;
+    }
+    
+    .mains-form>h1 {
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        font-size: 1.75rem;
+        margin-bottom: 1rem
+    }
+    
+    .mains-form>p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1rem
+    }
+    
+    .mains-image {
+        border-radius: 1rem;
+        width: 400px;
+        height: 590px;
+        background-image: url('../SVG/illustration-sign-up-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -98px;
+    }
+    
+    
+    ul {
+        padding-bottom: 5px;
+        transform: translate(-0.75rem);
+        padding-top: 10px;
+    }
+    
+    li {
+        list-style-image: url('../SVG/icon-list.svg');
+        font-size: 16px;
+        text-indent: 0.5rem;
+        text-align: start;
+        padding-bottom: 10px;
+        text-wrap: pretty;
+    }
+    
+    .user-input {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+    
+    
+    .user-input>input {
+        font-size: 16px;
+        text-indent: 10px;
+        padding: 16px;
+        margin: 10px 0 20px 0;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        outline-width: 0.2px;
+        border-width: 0.2px;
+    }
+    
+    .input:invalid {
+        border-color: #FF527B;
+        color: #FF6A3A;
+        background-color: #ff6b3a3a;
+    }
+    
+    label:has(.input:invalid) {
+        color: #FF6A3A;
+    }
+    
+    label:has(.input:valid) {
+        color: transparent;
+    }
+    
+    .label {
+        color: #000000;
+    
+    }
+    
+    .label-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    button {
+        width: 100%;
+        border-radius: 0.4rem;
+        border-width: 0;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        background-color: hsl(234, 29%, 20%);
+        padding: 20px 0;
+        cursor: pointer;
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    button:hover {
+        background-image: linear-gradient(to right,
+                #FF527B,
+                #FF6A3A);
+        box-shadow: 0px 15px 25px #FF527B77;
+        
+    }
+}
+
+/* {===============================================================================================================} */
+@media screen and (min-width: 375px) and (max-width: 649px){
+
+    .main {
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+   
+    }
+    
+    .mains-form {
+        margin: 1rem;
+    }
+    
+    .mains-form>h1 {
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 1rem
+    }
+    
+    .mains-form>p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25rem
+    }
+    
+    .mains-image {
+        width: 100%;
+        height:285px;
+        background-image: url('../SVG/illustration-sign-up-mobile.svg');
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+
+    }
+    
+    
+    ul {
+        padding-bottom: 22px;
+        transform: translate(-0.75rem);
+        padding-top: 10px;
+    }
+    
+    li {
+        list-style-image: url('../SVG/icon-list.svg');
+        font-size: 16px;
+        text-indent: 0.5rem;
+        text-align: start;
+        padding-bottom: 10px;
+    }
+    
+    .user-input {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+    
+    
+    .user-input>input {
+        font-size: 16px;
+        text-indent: 10px;
+        padding: 16px;
+        margin: 10px 0 20px 0;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        outline-width: 0.2px;
+        border-width: 0.2px;
+    }
+    
+    .input:invalid {
+        border-color: #FF527B;
+        color: #FF6A3A;
+        background-color: #ff6b3a3a;
+    }
+    
+    label:has(.input:invalid) {
+        color: #FF6A3A;
+    }
+    
+    label:has(.input:valid) {
+        color: transparent;
+    }
+    
+    .label {
+        color: #000000;
+    
+    }
+    
+    .label-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    button {
+        width: 100%;
+        border-radius: 0.4rem;
+        border-width: 0;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        background-color: hsl(234, 29%, 20%);
+        padding: 20px 0;
+        cursor: pointer;
+        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1)
+    }
+    
+    button:hover {
+        background-image: linear-gradient(to right,
+                #FF527B,
+                #FF6A3A);
+        box-shadow: 0px 15px 25px #FF527B77
+    }
+}

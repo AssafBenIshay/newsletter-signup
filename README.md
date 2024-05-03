@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Frontend Mentor - Newsletter sign-up form with success message solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add their email and submit the form
+- See a success message with their email after successfully submitting the form
+- See form validation messages if:
+  - The field is left empty
+  - The email address is not formatted correctly
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Assaf's Newsletter Sollution](.././newsletter-signup/public/screenshot.JPG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-### `npm run eject`
+## My process
+- learnt alot how to properly sending react functions in props
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Semantic HTML5 markup
+- CSS Flex
+- React lib for passing data
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What I learned
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+how to pass functions back and forth using React hooks thru the different pages components.
+and how to better manipulate components using CSS
+To see how you can add code snippets, see below:
 
-## Learn More
+```CSS
+  .user-input>input {
+        font-size: 16px;
+        text-indent: 10px;
+        padding: 16px;
+        margin: 10px 0 20px 0;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        outline-width: 0.2px;
+        border-width: 0.2px;
+    }
+    
+    .input:invalid { //paints the text and background incase of an input mismatch of an 'email' type 
+        border-color: #FF527B;
+        color: #FF6A3A;
+        background-color: #ff6b3a3a;
+    }
+    
+    label:has(.input:invalid) { //change the color of the label containing this input (input element is inside the label element)
+        color: #FF6A3A;
+    }
+    
+    label:has(.input:valid) {
+        color: transparent;     //the error message is transparent and appears only in case of error
+    }
+    
+    .label {
+        color: #000000;
+    
+    }
+    ```
+```React turnary conditioning
+      {success ? <Congratz btnText={buttonText} email={vEmail} /> : <Main fun={regSuccess} ction={f2} btnText={buttonText}  />}
+      // passing function with the turnary 
+```
+```js
+function validateText(e) {
+    //setemail(e.target.value)
+    setValidity(e.nativeEvent.srcElement.validity.typeMismatch)
+    pin pointing the error message of the input of type email element
+  }  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+continuing the quest for learning React
 
-### Analyzing the Bundle Size
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [King of CSS](https://www.youtube.com/@KevinPowell/search) - This helped me 
+- [Scrimba](https://www.scrimba.com) - The most effective way to learn React
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
+- Website - [Assaf Ben Ishay](https://github.com/AssafBenIshay)
+- Frontend Mentor - [@AssafBenIshay](https://www.frontendmentor.io/profile/AssafBenIshay)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

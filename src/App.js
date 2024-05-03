@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from '../src/components/main'
+import Congratz from './components/Congratz';
+import React from 'react';
 
 function App() {
+  const [success, setSuccess] = React.useState(false)
+  const [vEmail, setVemail] = React.useState('YOUR EMAIL')
+  const [buttonText, setButtonText] = React.useState('Subscribe to monthly newsletter')
+  
+  function f2(email) {
+    return setVemail(email)
+  }
+  function regSuccess() {
+    setSuccess(true)
+    setButtonText('Dismiss message')
+    
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {success ? <Congratz btnText={buttonText} email={vEmail} /> : <Main fun={regSuccess} ction={f2} btnText={buttonText}  />}
     </div>
   );
 }

@@ -1,0 +1,68 @@
+.congratz {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 12rem;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    background-color: white;
+    border-radius: 2rem;
+    width: 410px;
+    padding: 2.5rem 3.5rem;
+
+}
+
+.congratz>h1 {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.congratz>p {
+    font-size: 16px;
+    line-height: 1.3rem;
+}
+
+.congratz>button {
+    margin: 1rem 0;
+
+}
+
+@media screen and (min-width:260px) and (max-width:500px) {
+    .congratz {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background-color: white;
+        padding: 30px;
+    }
+
+    .congratz>img {
+        padding-top: 175px;
+        align-self: start;
+    }
+
+    .congratz>h1 {
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 50px;
+        line-height: 2rem
+    }
+
+    .congratz>p {
+        font-size: 16px;
+        line-height: 1.3rem;
+    }
+
+    .congratz>button {
+        margin-top: 12rem;
+
+    }
+
+}
