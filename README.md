@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AssafBenIshay/newsletter-signup/tree/master)
-- Live Site URL: [Add live site URL here](https://nl-signup.netlify.app/)
+- Solution URL: [The solution URL is here](https://github.com/AssafBenIshay/newsletter-signup/tree/master)
+- Live Site URL: [The live site URL is here](https://nl-signup.netlify.app/)
 
 ## My process
 - learnt alot how to properly sending react functions in props
